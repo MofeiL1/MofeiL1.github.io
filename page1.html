@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="styles.css" rel="stylesheet">
+        <title>Page 1</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <p>
+            Select a background color:
+        </p>
+        <select id = "bckgrndColor">
+            <!-- Make default be selected to avoid confusion -->
+            <option value="transparent" selected>Default</option>
+            <option value="Tomato">Tomato</option>
+            <option value="Orange">Orange</option>
+            <option value="DodgerBlue">Dodger Blue</option>
+            <option value="MediumSeaGreen">Medium Sea Green</option>
+            <option value="Gray">Gray</option>
+            <option value="SlateBlue">Slate Blue</option>
+            <option value="Violet">Violet</option>
+            <option value="LightGray">Light Gray</option>
+        </select>
+        <script>
+            // Script to change background color
+            document.querySelector('#bckgrndColor').onchange = function() {
+                document.querySelector('body').style.backgroundColor = this.value;
+                console.log("Color is selected");
+            };
+        </script>
+        <p>
+            Here is a new instrument every refresh:
+        </p>
+        <!-- Create a image first -->
+        <img id="image" src="piano.png" alt="piano.png">
+        <!-- Change the image src with a function -->
+        <script>
+            // Function to change the image source
+            function rndmImg() {
+                const images = [
+                    "bass.png",
+                    "drumset.png",
+                    "guitar.png",
+                    "mic.png",
+                    "piano.png"
+                ];
+                const ranNum = Math.floor(Math.random() * images.length);
+                console.log("The random number is", ranNum);
+                document.querySelector('#image').src = images[ranNum];
+                document.querySelector('#image').alt = images[ranNum];
+                console.log("The image displayed is", images[ranNum]);
+            }
+            rndmImg();
+        </script>
+    <footer>
+        <a href="index.html">Back to homepage</a>
+    </footer>
+    </body>
+</html>

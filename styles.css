@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    transition: background-color 0.5s ease;
+    text-align: center;
+    margin: 0;
+}
+
+p {
+    font-size: 18px;
+    color: #333;
+    width: 100%;
+}
+
+#p2top {
+    font-style: italic;
+}
+
+#fav {
+    font-family: "Bona Nova SC", serif;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+p a {
+    padding: 5px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    text-decoration: none;
+    color: inherit;
+    font-size: inherit;
+    width: inherit;
+    transition: color 0.3s ease;
+}
+
+p a:hover {
+    color: #888;
+}
+
+select,
+button,
+input {
+    max-width: 80%;
+    font-size: 16px;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #eee;
+}
+
+button:active {
+    background-color: #ddd;
+}
+
+img {
+    max-width: 80%;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(165, 146, 146, 0.1);
+    box-sizing: border-box;
+}
+
+#countDown {
+    font-family: 'DS-Digital', sans-serif;
+    font-size: 64px;
+    word-spacing: 20px;
+    color: #0a0;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    font-size: 16px;
+    text-align: center;
+    width: 100%;
+    box-shadow: 0 0 8px #333;
+    position: fixed;
+    bottom: 0;
+    box-sizing: border-box;
+}
+
+footer a {
+    color: inherit;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #888;
+}
